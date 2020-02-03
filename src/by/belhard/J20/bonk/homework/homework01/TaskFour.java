@@ -3,9 +3,9 @@ package by.belhard.J20.bonk.homework.homework01;
 public class TaskFour {
     public static void main(String[] args) {
         double salary1, salary2, salary3, max, min, s, t, r;
-        salary1 = 20.5;
-        salary2 = 15.2;
-        salary3 = 21.6;
+        salary1 = 30.5;
+        salary2 = 20.2;
+        salary3 = 14.6;
         //Решение 1
         if (salary1 > salary2 && salary2 > salary3 && salary1 > salary3) {
             max = salary1;

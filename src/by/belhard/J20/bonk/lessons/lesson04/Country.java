@@ -2,20 +2,37 @@ package by.belhard.J20.bonk.lessons.lesson04;
 
 public class Country {
 
-    String  title;
-    int zipCod;
+    private String title;
 
-    public Country(String title, int zipCod) {
+    private static int exampleStaticVariable;
+
+    private int zipCode;
+
+    public Country(String title, int zipCode) {
         this.title = title;
-        this.zipCod = zipCod;
+        this.zipCode = zipCode;
+    }
+
+    public static String capitalize(String string) {
+
+        exampleStaticVariable++;
+
+        return string.toUpperCase();
     }
 
     public String getTitle() {
         return title;
     }
 
-    public int getZipCod() {
-        return zipCod;
+    public int getZipCode() {
+        return zipCode;
     }
 
+    @Override
+    public String toString() {
+        return "Country{" +
+                "title='" + title + '\'' +
+                ", zipCode=" + zipCode +
+                '}';
+    }
 }
